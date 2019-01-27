@@ -7,7 +7,7 @@
   <body>
 
 		<header class="page-header">
-			<span class="page-header__logo">Device</span>
+			<img src="img/logo.png" alt="Device">
 			<div class="page-header__row">
 				<input type="search" class="page-header__search" placeholder="Поиск по сайту">
 				<ul>
@@ -37,8 +37,10 @@
 		<main>
 			
 			<section class="slider-promo">
+				<h2 class="visually-hidden">Промо-товары</h2>
 
 				<article class="slider-promo__item">
+					<h3 class="visually-hidden">Селфи-палка</h3>
 					<span class="slider-promo__number">01</span>
 					<img src="img/slider-1.png" alt="Палка для селфи">
 					<b>Делай селфи, как Бен Стиллер!</b>
@@ -59,6 +61,7 @@
 				</article>
 
 				<article class="slider-promo__item">
+					<h3 class="visually-hidden">Фитнес-браслет</h3>
 					<span class="slider-promo__number">02</span>
 					<img src="img/slider-2.png" alt="Фитнес-браслет">
 					<b>Худеем правильно!</b>
@@ -75,6 +78,7 @@
 				</article>
 
 				<article class="slider-promo__item">
+					<h3 class="visually-hidden">Квадрокоптер</h3>
 					<span class="slider-promo__number">03</span>
 					<img src="img/slider-3.png" alt="Квадрокоптер">
 					<b>Порхает как бабочка, жалит как пчела!</b>
@@ -97,34 +101,48 @@
 			<nav class="page-nav">
 				<ul>
 					<li>
-						<img src="img/nav-1.png" alt="Виртуальная реальность">
+						<div class="page-nav__wrap-img">
+							<img src="img/nav-1.png" alt="Виртуальная реальность">
+						</div>
 						<h3>Виртуальная реальность</h3>
 					</li>
 					<li>
-						<img src="img/nav-2.png" alt="Моноподы для селфи">
+						<div class="page-nav__wrap-img">
+							<img src="img/nav-2.png" alt="Моноподы для селфи">							
+						</div>
 						<h3>Моноподы для селфи</h3>
 					</li>
 					<li>
-						<img src="img/nav-3.png" alt="Экшн-камеры">
+						<div class="page-nav__wrap-img">
+							<img src="img/nav-3.png" alt="Экшн-камеры">
+						</div>						
 						<h3>Экшн-камеры</h3>
 					</li>
 					<li>
-						<img src="img/nav-4.png" alt="Фитнес-браслеты">
+						<div class="page-nav__wrap-img">
+							<img src="img/nav-4.png" alt="Фитнес-браслеты">
+						</div>						
 						<h3>Фитнес-браслеты</h3>
 					</li>
 					<li>
-						<img src="img/nav-5.png" alt="Умные часы">
+						<div class="page-nav__wrap-img">
+							<img src="img/nav-5.png" alt="Умные часы">
+						</div>						
 						<h3>Умные часы</h3>
 					</li>
 					<li>
-						<img src="img/nav-6.png" alt="Квадрокоптеры">
+						<div class="page-nav__wrap-img">
+							<img src="img/nav-6.png" alt="Квадрокоптеры">
+						</div>	
 						<h3>Квадрокоптеры</h3>
 					</li>
 				</ul>
 			</nav>
 
 			<section class="slider">
+				<h2 class="visually-hidden">Сервисы</h2>
 				<section class="slider__nav">
+					<h3 class="visually-hidden">Навигация по сервисам</h3>
 					<button class="slider__button">Доставка</button>
 					<button class="slider__button">Гарантия</button>
 					<button class="slider__button">Кредит</button>
@@ -143,7 +161,67 @@
 				</section>
 			</section>
 
+			<section class="company">
+				<h2 class="visually-hidden">Партнерские компании</h2>
+				<a href="#"><img src="img/company-logo-1.png" alt="DJI"></a>
+				<a href="#"><img src="img/company-logo-2.png" alt="SP Gadgets"></a>
+				<a href="#"><img src="img/company-logo-3.png" alt="GoPro"></a>
+				<a href="#"><img src="img/company-logo-4.png" alt="Vive"></a>
+			</section>
+
+			<section class="info-us">
+				<h2 class="visually-hidden">Информация о нас</h2>
+
+				<section class="info-us__about-us">
+					<h3>О нас</h3>
+					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<ul>
+						<li>Деловые линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспидиция</li>
+					</ul>
+					<a href="#">Подробнее о нас</a>
+				</section>
+
+				<section class="info-us__contacts">
+					<h3>Контакты</h3>
+					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+					<a href="#"><img src="img/map.jpg" alt="город Москва, улица Строителей, 15"></a>
+					<a href="#">Напишите нам</a>
+				</section>
+
+			</section>
+
 		</main>
+
+		<footer class="page-footer">
+			<div class="page-footer__row-1">
+				<img src="img/logo--gold.png" alt="Device">
+				<div class="page-footer__wrap-row1">
+					<a href="#">Войти</a>
+					<a href="#">Сравнить</a>
+					<a href="#">Корзина</a>
+				</div>
+			</div>
+			<div class="page-footer__row-2">
+				<address>г. Москва, ул. Строителей, 15</address>
+				<div class="page-footer__wrap-row2">
+					<a href="#" class="page-footer__info-link">Доставка</a>
+					<a href="#" class="page-footer__info-link">Гарантия</a>
+					<a href="#" class="page-footer__info-link">Контакты</a>
+				</div>
+				<address>Тел.: +7 (495) 495-95-95</address>
+			</div>
+			<div class="page-footer__row-3">
+				<div class="page-footer__wrap-row3">
+					<a href="#"><img src="img/fb.png" alt="Facebook"></a>
+					<a href="#"><img src="img/inst.png" alt="Instagram"></a>
+					<a href="#"><img src="img/tw.png" alt="Twitter"></a>
+				</div>
+			</div>
+			<a href="#"><img src="img/logo-html.png" alt="HTML Academy"></a>
+		</footer>
 		
   </body>
 </html>
