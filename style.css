@@ -29,3 +29,128 @@
     url("fonts/opensanslight.woff2") format("woff2"),
     url("fonts/opensanslight.ttf") format("truetype");
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    font-weight: bold;
+}
+
+.page-header {
+    box-sizing: border-box;
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 21px;
+    padding: 0 60px;
+    background: linear-gradient(white 19px, #F6E298 19px);
+}
+
+.page-header__row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.page-header__form {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.page-header__search {
+    font-family: OpenSans;
+    font-weight: lighter;
+    font-size: 15px;
+    background: none;
+    border: none;
+    padding: 15px;
+    height: 47px;
+    padding-left: 40px;
+    width: 356px;
+}
+
+.page-header__form::before,
+.page-header__login::before,
+.page-header__compare::before,
+.page-header__cart::before {
+    content: '';
+    display: block;
+    position: absolute;
+    -webkit-background-size: contain;
+    background-size: contain;
+    transform: translateY(-50%);
+    top: 11px;
+    left: 0;
+}
+
+.page-header__form::before {
+    background-image: url("img/search.svg");
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+}
+
+.page-header__btn-search {
+    font-family: OpenSans;
+    font-weight: lighter;
+    box-sizing: border-box;
+    height: 49px;
+    font-size: 15px;
+    padding: 0 20px;
+    background: none;
+    border: none;
+    position: relative;
+    left: -4px;
+    display: none;
+}
+
+.page-header__account {
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    list-style: none;
+    align-self: center;
+}
+
+.page-header__login,
+.page-header__compare,
+.page-header__cart {
+    font-family: OpenSans;
+    font-weight: lighter;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    padding-left: 27px;
+    position: relative;
+    align-self: center;
+}
+
+.page-header__login::before {
+    background-image: url("img/user.svg");
+    width: 13px;
+    height: 12px;
+}
+
+.page-header__compare::before {
+    background-image: url("img/compare.svg");
+    width: 10px;
+    height: 10px;
+}
+
+.page-header__cart::before {
+    background-image: url("img/cart.svg");
+    width: 12px;
+    height: 12px;
+}
+
+
+.page-header__compare {
+    margin-right: 40px;
+    padding-left: 20px;
+}
+
+.page-header__cart {
+    padding-left: 24px;
+}
