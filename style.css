@@ -43,18 +43,20 @@ body {
     margin: 0 auto;
     margin-top: 21px;
     padding: 0 60px;
+    padding-bottom: 14px;
     background: linear-gradient(white 19px, #F6E298 19px);
 }
 
-.page-header__row {
-    margin-top: 15px;
+.page-header__row,
+.page-header__nav {
+    margin-top: 14px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
 }
 
 .page-header__form {
-    flex-basis: 50%;
+    flex-basis: 540px;
     position: relative;
 }
 
@@ -116,12 +118,19 @@ body {
 
 .page-header__login,
 .page-header__compare,
+.page-header__cart,
+.page-header__link,
+.page-header__sub-link {
+    color: black;
+    text-decoration: none;
+}
+
+.page-header__login,
+.page-header__compare,
 .page-header__cart {
     font-family: OpenSans;
     font-weight: lighter;
     font-size: 15px;
-    color: black;
-    text-decoration: none;
     padding-left: 27px;
     position: relative;
     align-self: center;
@@ -153,4 +162,93 @@ body {
 
 .page-header__cart {
     padding-left: 24px;
+}
+
+.page-header__nav,
+.page-header__sub-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-header__nav {
+    margin-top: 32px;
+    position: relative;
+}
+
+.page-header__catalog {
+    flex-basis: 540px;
+}
+
+.page-header__catalog .page-header__link {
+    position: relative;
+}
+
+.page-header__catalog .page-header__link::before,
+.page-header__catalog .page-header__link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 16px;
+    background-color: black;
+    opacity: 0.3;
+    right: -29px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.page-header__catalog .page-header__link::after {
+    transform-origin: center;
+    transform: rotate(90deg);
+    top: calc(50% - 1px);
+}
+
+.page-header__delivery {
+    margin-right: auto;
+}
+
+.page-header__guarantee {
+    margin-right: 106px;
+}
+
+.page-header__sub-nav {
+    box-sizing: border-box;
+    width: 1160px;
+    height: 150px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    background-color: #F6E298;
+    position: absolute;
+    left: -60px;
+    top: calc(100% + 14px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.page-header__sub-nav li {
+    margin: 8px 0;
+    margin-right: 58px;
+}
+
+.page-header__sub-nav li:last-child {
+    flex-basis: 100%;
+    margin-left: 16px;
+}
+
+.page-header__link {
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+}
+
+.page-header__sub-link {
+    font-family: OpenSans;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 0.2px;
 }
