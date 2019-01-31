@@ -49,7 +49,7 @@ body {
 
 .page-header__row,
 .page-header__nav {
-    margin-top: 14px;
+    margin-top: 13px;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -67,9 +67,14 @@ body {
     background: none;
     border: none;
     padding: 15px;
-    height: 47px;
-    padding-left: 40px;
+    height: 49px;
     width: 356px;
+    padding-left: 40px;
+    outline: none;
+}
+
+.page-header__search::placeholder {
+    opacity: 0.3;
 }
 
 .page-header__form::before,
@@ -102,10 +107,11 @@ body {
     font-size: 15px;
     padding: 0 20px;
     background: none;
-    border: none;
+    border: 2px solid black;
     position: relative;
     left: -4px;
     display: none;
+    outline: none;
 }
 
 .page-header__account {
@@ -172,7 +178,7 @@ body {
 }
 
 .page-header__nav {
-    margin-top: 32px;
+    margin-top: 31px;
     position: relative;
 }
 
@@ -214,18 +220,19 @@ body {
 .page-header__sub-nav {
     box-sizing: border-box;
     width: 1160px;
-    height: 150px;
-    padding-top: 8px;
+    height: 164px;
+    padding-top: 22px;
     padding-bottom: 30px;
     padding-left: 60px;
     background-color: #F6E298;
     position: absolute;
     left: -60px;
-    top: calc(100% + 14px);
+    top: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
+    display: none;
 }
 
 .page-header__sub-nav li {
@@ -251,4 +258,60 @@ body {
     font-weight: lighter;
     font-size: 15px;
     letter-spacing: 0.2px;
+}
+
+
+/*
+
+Animation header
+
+*/
+
+.page-header__logo:hover,
+.page-header__login:hover,
+.page-header__compare:hover,
+.page-header__cart:hover,
+.page-header__link:hover,
+.page-header__sub-link:hover {
+    opacity: 0.6;
+}
+
+.page-header__logo:active,
+.page-header__login:active,
+.page-header__compare:active,
+.page-header__cart:active,
+.page-header__link:active,
+.page-header__sub-link:active {
+    opacity: 0.3;
+}
+
+.page-header__catalog:hover .page-header__sub-nav {
+    display: flex;
+}
+
+.page-header__search:hover::placeholder {
+    opacity: 0.6;
+}
+
+.page-header__search:focus::placeholder {
+    opacity: 1;
+}
+
+.page-header__search:focus {
+    height: 47px;
+    border-bottom: 2px solid black;
+}
+
+.page-header__search:focus + .page-header__btn-search {
+    display: inline-flex;
+}
+
+.page-header__btn-search:hover {
+    background-color: black;
+    color: white;
+    display: inline-flex;
+}
+
+.page-header__btn-search:active {
+    color: #4C4C4CFF;
 }
