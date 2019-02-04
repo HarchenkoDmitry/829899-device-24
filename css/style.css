@@ -26,6 +26,11 @@
     url("../fonts/opensanslight.woff") format("woff");
 }
 
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
 
 body {
     font-family: Gilroy, Arial, sans-serif;
