@@ -80,7 +80,7 @@ body {
 }
 .page-header__search {
     font-family: OpenSans, Arial, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
     background: none;
     border: none;
@@ -140,7 +140,7 @@ body {
 }
 .page-header__btn-search {
     font-family: OpenSans, Arial, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 49px;
@@ -176,7 +176,7 @@ body {
 .page-header__compare,
 .page-header__cart {
     font-family: OpenSans, Arial, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
     padding-left: 27px;
     position: relative;
@@ -292,7 +292,7 @@ body {
 }
 .page-header__sub-link {
     font-family: OpenSans, Arial, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
     letter-spacing: 0.2px;
 }
