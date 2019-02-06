@@ -58,64 +58,70 @@
 		
 		<main>
 			
-			<section class="slider-promo">
+			<section class="slider-promo container">
 				<h2 class="visually-hidden">Промо-товары</h2>
 
 				<article class="slider-promo__item">
 					<h3 class="visually-hidden">Селфи-палка</h3>
 					<span class="slider-promo__number">01</span>
-					<img src="img/slider-1.png" alt="Палка для селфи">
-					<b>Делай селфи, как Бен Стиллер!</b>
-					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-					<a href="#" class="slider-promo__link general-button">Подробнее</a>
-					<table>
-						<tr>
-							<td>8,5 м</td>
-							<td>5 кг</td>
-							<td>Карбон</td>
-						</tr>
-						<tr>
-							<th>Длина палки</th>
-							<th>Вес палки</th>
-							<th>Материал</th>
-						</tr>
-					</table>
+					<img src="img/slider-1.png" height="" alt="Палка для селфи" class="slider-promo__img">
+					<div class="slider-promo__column-right">
+						<b class="slider-promo__promo-text">Делай селфи, как Бен Стиллер!</b>
+						<p class="slider-promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+						<a href="#" class="slider-promo__link general-button">Подробнее</a>
+						<table class="slider-promo__characteristic">
+							<tr>
+								<td>8,5 м</td>
+								<td>5 кг</td>
+								<td>Карбон</td>
+							</tr>
+							<tr>
+								<th>Длина палки</th>
+								<th>Вес палки</th>
+								<th>Материал</th>
+							</tr>
+						</table>
+					</div>	
 				</article>
 
 				<article class="slider-promo__item">
 					<h3 class="visually-hidden">Фитнес-браслет</h3>
 					<span class="slider-promo__number">02</span>
-					<img src="img/slider-2.png" alt="Фитнес-браслет">
-					<b>Худеем правильно!</b>
-					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-					<a href="#" class="slider-promo__link general-button">Подробнее</a>
-					<table>
-						<tr>
-							<td>48 часов</td>
-						</tr>
-						<tr>
-							<th>Без подзарядки</th>
-						</tr>
-					</table>
+					<img src="img/slider-2.png" alt="Фитнес-браслет" class="slider-promo__img">
+					<div class="slider-promo__column-right">
+						<b class="slider-promo__promo-text">Худеем правильно!</b>
+						<p class="slider-promo__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+						<a href="#" class="slider-promo__link general-button">Подробнее</a>
+						<table class="slider-promo__characteristic">
+							<tr>
+								<td>48 часов</td>
+							</tr>
+							<tr>
+								<th>Без подзарядки</th>
+							</tr>
+						</table>
+					</div>
 				</article>
 
 				<article class="slider-promo__item">
 					<h3 class="visually-hidden">Квадрокоптер</h3>
 					<span class="slider-promo__number">03</span>
-					<img src="img/slider-3.png" alt="Квадрокоптер">
-					<b>Порхает как бабочка, жалит как пчела!</b>
-					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-					<a href="#" class="slider-promo__link general-button">Подробнее</a>
-					<table>
-						<tr>
-							<td>800 м</td>
-							<td>50 м</td>
-						</tr>
-						<tr>
-							<th>Дальность полета</th>
-							<th>Радиус поражения</th>
-						</tr>
-					</table>
+					<img src="img/slider-3.png" alt="Квадрокоптер" class="slider-promo__img">
+					<div class="slider-promo__column-right">
+						<b class="slider-promo__promo-text">Порхает как бабочка, жалит как пчела!</b>
+						<p class="slider-promo__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+						<a href="#" class="slider-promo__link general-button">Подробнее</a>
+						<table class="slider-promo__characteristic">
+							<tr>
+								<td>800 м</td>
+								<td>50 м</td>
+							</tr>
+							<tr>
+								<th>Дальность полета</th>
+								<th>Радиус поражения</th>
+							</tr>
+						</table>
+					</div>
 				</article>
 		
 			</section>
@@ -280,5 +286,10 @@
 			<a href="#">Закрыть карту</a>
 		</section>
 		
+		<script>
+			var art = document.querySelectorAll('.slider-promo__item');
+			console.log(art);
+		</script>
+
   </body>
 </html>
