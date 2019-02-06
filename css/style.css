@@ -66,7 +66,7 @@ body {
 }
 .page-header__row,
 .page-header__nav {
-    margin-top: 13px;
+    margin-top: 11px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -291,7 +291,8 @@ body {
     font-weight: 800;
     font-size: 18px;
     text-transform: uppercase;
-    letter-spacing: 3.5px;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
 }
 .page-header__sub-link {
     font-family: OpenSans, Arial, sans-serif;
@@ -304,19 +305,54 @@ body {
 
 
 
-
+.slider-promo {
+    position: relative;
+}
 .slider-promo__item {
-    background: linear-gradient(#F6E298 164px, #fff 164px);
+    background: linear-gradient(#F6E298 163px, #fff 163px);
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 31px;
+    margin-bottom: 48px;
 }
 .slider-promo__item:nth-of-type(2) {
     display: none;
 }
 .slider-promo__item:nth-of-type(3) {
     display: none;
+}
+.slider-promo__controls {
+    position: absolute;
+    right: 85px;
+    top: 370px;
+    z-index: 5;
+}
+.slider-promo__controls-item {
+    font-size: 0;
+    height: 12px;
+    width: 12px;
+    padding: 0;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background: none;
+    position: relative;
+    margin-right: 17px;
+    cursor: pointer;
+    outline: none;
+}
+.slider-promo__controls-item:disabled::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+.slider-promo__controls-item:focus {
+    box-shadow: 0 0 1px 2px rgba(0, 153, 255, 0.5);
 }
 .slider-promo__number {
     position: absolute;
@@ -340,14 +376,11 @@ body {
 }
 .slider-promo__column-right {
     flex-basis: calc(50% - 20px);
-    padding-top: 131px;
+    padding-top: 132px;
     padding-bottom: 60px;
     z-index: 1;
 }
 .slider-promo__promo-text {
-    font-size: 47px;
-    line-height: 56px;
-    letter-spacing: 0.6px;
     display: inline-block;
     margin-right: 160px;
 }
@@ -362,7 +395,8 @@ body {
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.2px;
+    color: #464646;
     margin-right: 70px;
     margin-top: 19px;
     margin-bottom: 44px;
@@ -373,39 +407,25 @@ body {
 .slider-promo__item:nth-of-type(3) .slider-promo__description {
     margin-right: 90px;
 }
-.general-button {
-    font-family: Gilroy, Arial, sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 40px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: black;
-    border: none;
-    display: inline-block;
-    height: 40px;
-    padding: 0 40px;
-    background: linear-gradient(#fff 16px, #f0c52e 16px, #f0c52e 24px, #fff 24px);
-}
-.general-button:hover {
-    background: #f0c52e;
-}
 .slider-promo__characteristic {
     margin-top: 43px;
-    border-spacing: 0 20px;
+    border-spacing: 0 5px;
 }
 .slider-promo__characteristic tr:nth-child(1) {
-    font-family: Gilroy;
+    font-family: Gilroy, Arial, sans-serif;;
     font-weight: 300;
     font-size: 36px;
-
+    line-height: 1.33;
+    letter-spacing: 0.4px;
 }
 .slider-promo__characteristic tr:nth-child(2) {
-    font-family: OpenSans;
+    font-family: OpenSans, Arial, sans-serif;;
     font-weight: 300;
     font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: 0.1px;
     text-align: left;
+    color: #464646;
     border-spacing: 30px 5px;
 }
 .slider-promo__characteristic td:nth-child(1) {
@@ -415,7 +435,30 @@ body {
     min-width: 140px;
 }
 
-
+.general-button {
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    color: black;
+    border: none;
+    display: inline-block;
+    height: 40px;
+    padding: 9px 43px;
+    background: linear-gradient(rgba(1, 1, 1, 0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(1, 1, 1, 0) 24px);
+}
+.general-button:hover {
+    background: #f0c52e;
+}
+.general-header {
+    font-size: 47px;
+    line-height: 1.19;
+    letter-spacing: 0.5px;
+}
 
 
 
@@ -448,6 +491,8 @@ body {
     font-family: Gilroy, Arial, sans-serif;
     font-weight: 800;
     font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
 }
 .page-nav__link:hover .page-nav__img {
     background-color: #f0c52e;

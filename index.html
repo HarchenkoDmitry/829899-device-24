@@ -60,13 +60,17 @@
 			
 			<section class="slider-promo container">
 				<h2 class="visually-hidden">Промо-товары</h2>
-
+				<div class="slider-promo__controls">
+					<button class="slider-promo__controls-item" disabled>1 слайд</button>
+					<button class="slider-promo__controls-item">2 слайд</button>
+					<button class="slider-promo__controls-item">3 слайд</button>
+				</div>
 				<article class="slider-promo__item">
 					<h3 class="visually-hidden">Селфи-палка</h3>
 					<span class="slider-promo__number">01</span>
 					<img src="img/slider-1.png" height="" alt="Палка для селфи" class="slider-promo__img">
 					<div class="slider-promo__column-right">
-						<b class="slider-promo__promo-text">Делай селфи, как Бен Стиллер!</b>
+						<b class="slider-promo__promo-text general-header">Делай селфи, как Бен Стиллер!</b>
 						<p class="slider-promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 						<a href="#" class="slider-promo__link general-button">Подробнее</a>
 						<table class="slider-promo__characteristic">
@@ -89,7 +93,7 @@
 					<span class="slider-promo__number">02</span>
 					<img src="img/slider-2.png" alt="Фитнес-браслет" class="slider-promo__img">
 					<div class="slider-promo__column-right">
-						<b class="slider-promo__promo-text">Худеем правильно!</b>
+						<b class="slider-promo__promo-text general-header">Худеем правильно!</b>
 						<p class="slider-promo__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 						<a href="#" class="slider-promo__link general-button">Подробнее</a>
 						<table class="slider-promo__characteristic">
@@ -108,7 +112,7 @@
 					<span class="slider-promo__number">03</span>
 					<img src="img/slider-3.png" alt="Квадрокоптер" class="slider-promo__img">
 					<div class="slider-promo__column-right">
-						<b class="slider-promo__promo-text">Порхает как бабочка, жалит как пчела!</b>
+						<b class="slider-promo__promo-text general-header">Порхает как бабочка, жалит как пчела!</b>
 						<p class="slider-promo__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<a href="#" class="slider-promo__link general-button">Подробнее</a>
 						<table class="slider-promo__characteristic">
@@ -181,24 +185,26 @@
 
 			<section class="slider">
 				<h2 class="visually-hidden">Сервисы</h2>
-				<section class="slider__nav">
-					<h3 class="visually-hidden">Навигация по сервисам</h3>
-					<button class="slider__button general-button">Доставка</button>
-					<button class="slider__button general-button">Гарантия</button>
-					<button class="slider__button general-button">Кредит</button>
-				</section>
-				<section class="slider__item">
-					<h3>Доставка</h3>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-				</section>
-				<section class="slider__item">
-					<h3>Гарантия</h3>
-					<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-				</section>
-				<section class="slider__item">
-					<h3>Кредит</h3>
-					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-				</section>
+				<div class="slider__wrap container">
+					<section class="slider__nav">
+						<h3 class="visually-hidden">Навигация по сервисам</h3>
+						<button class="slider__button general-button">Доставка</button>
+						<button class="slider__button general-button">Гарантия</button>
+						<button class="slider__button general-button">Кредит</button>
+					</section>
+					<section class="slider__item">
+						<h3 class="general-header">Доставка</h3>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					</section>
+					<section class="slider__item">
+						<h3 class="general-header">Гарантия</h3>
+						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+					</section>
+					<section class="slider__item">
+						<h3 class="general-header">Кредит</h3>
+						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+					</section>
+				</div>
 			</section>
 
 			<section class="company">
@@ -215,7 +221,7 @@
 				<h2 class="visually-hidden">Информация о нас</h2>
 
 				<section class="info-us__about-us">
-					<h3>О нас</h3>
+					<h3 class="general-header">О нас</h3>
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 					<ul>
@@ -227,7 +233,7 @@
 				</section>
 
 				<section class="info-us__contacts">
-					<h3>Контакты</h3>
+					<h3 class="general-header">Контакты</h3>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<a href="#"><img src="img/map.jpg" alt="город Москва, улица Строителей, 15"></a>
 					<a href="#" class="general-button">Напишите нам</a>
