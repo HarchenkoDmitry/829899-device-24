@@ -558,15 +558,19 @@ body {
     text-align: center;
     margin-bottom: 24px;
 }
+.slider__button:active,
+.slider__button:disabled {
+    background: #000;
+    color: #f0c52e;
+    position: relative;
+}
 .slider__button:last-child {
     margin-bottom: 71px;
 }
 .slider__button:disabled {
-    background: #000;
-    color: #f0c52e;
     cursor: default;
-    position: relative;
 }
+.slider__button:active::before,
 .slider__button:disabled::before {
     content: '';
     display: block;
@@ -868,7 +872,6 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
-
 
 .page-footer__row-3::before {
     content: '';
