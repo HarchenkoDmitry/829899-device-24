@@ -627,15 +627,19 @@ body {
 }
 
 
-
+.company {
+    margin-bottom: 88px;
+}
 .company__list {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .company__list-item {
     position: relative;
+    cursor: pointer;
 }
 .company__list-item:hover::after {
     content: '';
@@ -658,3 +662,81 @@ body {
     background-image: url('../img/company-logo-4--in-color.png');
 }
 
+
+
+
+
+
+.info-us {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+}
+.info-us__about-us,
+.info-us__contacts {
+    flex-basis: 50%;
+}
+.info-us__contacts {
+    padding-left: 20px;
+}
+.info-us__about-us::before,
+.info-us__contacts::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 7px;
+    background-color: #000;
+}
+.info-us__header {
+    margin-top: 46px;
+    margin-bottom: 43px;
+}
+.info-us__text {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2;
+    color: #464646;
+    margin-bottom: 30px;
+}
+.info-us__about-us .info-us__text {
+    padding-right: 105px;
+}
+.info-us__contacts .info-us__text {
+    padding-right: 40px;
+}
+.info-us__list {
+    margin-top: 66px;
+    margin-bottom: 54px;
+    padding: 0;
+}
+.info-us__list-item {
+    list-style: none;
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 2.5;
+    position: relative;
+    padding-left: 35px;
+}
+.info-us__list-item::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #e6e6e6;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 1px;
+}
+.info-us__map {
+    margin-top: 9px;
+    margin-bottom: 64px;
+}
+.info-us__button {
+    padding-left: 0;
+    padding-right: 0;
+    width: 260px;
+    text-align: center;
+}
