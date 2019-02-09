@@ -133,13 +133,11 @@ body {
     opacity: 1;
 }
 .page-header__search:focus {
-    height: 47px;
+    height: 49px;
     border-bottom: 2px solid black;
 }
 .page-header__search:focus + .page-header__btn-search {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: inline-block;
 }
 .page-header__btn-search:hover {
     background-color: #000;
@@ -181,10 +179,10 @@ body {
     padding: 0 20px;
     background: none;
     border: 2px solid black;
-    position: relative;
-    left: -4px;
+    position: absolute;
+    left: 356px;
     display: none;
-    outline: none;
+/*    outline: none;*/
 }
 .page-header__account {
     margin: 0;
