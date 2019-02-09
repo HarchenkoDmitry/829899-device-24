@@ -72,7 +72,8 @@ body {
     background: linear-gradient(rgba(1, 1, 1, 0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(1, 1, 1, 0) 24px);
     cursor: pointer;
 }
-.general-button:hover {
+.general-button:hover,
+.general-button:focus {
     background: #f0c52e;
 }
 .general-button:active {
@@ -738,6 +739,7 @@ body {
     left: 1px;
 }
 .info-us__map {
+    display: inline-block;
     margin-top: 9px;
     margin-bottom: 64px;
 }
@@ -922,4 +924,128 @@ body {
 }
 .page-footer__html:active {
     opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+.close-popup {
+    display: block;
+    position: absolute;
+    font-size: 0;
+    width: 55px;
+    height: 55px;
+    opacity: 0.5;
+    background-color: #f0c52e;
+    border-radius: 50%;
+    top: 22px;
+    right: 22px;
+    transition: 0.15s;
+}
+.close-popup:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+.close-popup:active {
+    opacity: 0.3;
+}
+.close-popup::after,
+.close-popup::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+.close-popup::after {
+   transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-popup::before {
+   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+.write-us {
+    width: 960px;
+    height: 533px;
+    background-color: #fff;
+    padding: 93px 100px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    display: none;
+}
+.write-us__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.write-us__form label {
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    display: inline-block;
+    width: 360px;
+}
+.write-us__form input,
+.write-us__form textarea {
+    background-color: #e5e5e5;
+    border: none;
+    opacity: 0.5;
+    margin-top: 7px;
+    margin-bottom: 34px;
+    padding: 20px;
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+    outline: none;
+    color: #464646;
+}
+.write-us__form input:hover,
+.write-us__form textarea:hover {
+    opacity: 1;
+}
+.write-us__form input:active,
+.write-us__form input:focus,
+.write-us__form textarea:active,
+.write-us__form textarea:focus {
+    box-shadow: inset 0 0 0 3px #f7e296;
+    background-color: #fff;
+    opacity: 1;
+}
+.write-us__form input {
+    width: 360px;
+    height: 50px;
+}
+.write-us__form textarea {
+    width: 100%;
+    height: 156px;
+    padding: 15px 20px;
+    resize: none;
+}
+.write-us__form input::placeholder,
+.write-us__form textarea::placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+.write-us___button {
+    margin-top: 8px;
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
 }

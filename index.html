@@ -235,7 +235,7 @@
 				<section class="info-us__contacts">
 					<h3 class="info-us__header general-header">Контакты</h3>
 					<p class="info-us__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<a href="#"><img class="info-us__map" src="img/map.jpg" alt="город Москва, улица Строителей, 15"></a>
+					<a href="#" class="info-us__map"><img src="img/map.jpg" alt="город Москва, улица Строителей, 15"></a>
 					<a href="#" class="info-us__button general-button">Напишите нам</a>
 				</section>
 
@@ -276,21 +276,21 @@
 		</footer>
 
 		<section class="write-us">
-			<button  type="button" class="write-us__btn-close" aria-label="Закрыть отправку формы"></button>
+			<a href="#" class="close-popup">Закрыть отправку формы</a>
 			<form action="https://echo.htmlacademy.ru" class="write-us__form" method="POST">
 				<label for="name">Ваше имя:</label>
-				<input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
 				<label for="email">Ваш e-mail:</label>
+				<input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
 				<input type="email" id="email" name="email" placeholder="email@example.com" required>
 				<label for="letter">Текст письма:</label>
 				<textarea name="letter" id="letter" placeholder="В свободной форме" required></textarea>
-				<button type="submit">Отправить</button>
+				<button type="submit" class="write-us___button general-button">Отправить</button>
 			</form>
 		</section>
 
 		<section class="map-popup">
 			<img src="img/map--big.jpg" alt="город Москва, улица Строителей, 15">
-			<a href="#">Закрыть карту</a>
+			<a href="#" class="close-popup">Закрыть карту</a>
 		</section>
 		
 
