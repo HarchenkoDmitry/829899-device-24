@@ -71,50 +71,110 @@
 
 
       
-      <section class="sort">
+      <div class="catalog-head">
         <div class="container catalog-wrap">
-          <div class="catalog-left-column"></div>
-          <div class="catalog-right-column">
-            <h2 class="sort__header">Сортировка:</h2>
-          </div>
-        </div>
-      </section>
-
-      <div class="catalog-container">
-        <div class="container catalog-wrap">
-          <section class="catalog-left-column filter">
+          <div class="catalog-left-column">
             <h2 class="filter__header">Фильтр:</h2>
-            <form action="">
-              <input type="text">
-              <input type="text">
-              <input type="text">
-              <input type="text">
-            </form>
-          </section>
-          <div class="catalog-right-column catalog-item">
-            textetxtetx
           </div>
+          <section class="catalog-right-column sort">
+            <h2 class="sort__header">Сортировка:</h2>
+            <span class="sort__text">По цене</span>
+            <a href="#" class="sort__text">По типу</a>
+            <a href="#" class="sort__text">По популярности</a>
+            <a href="#" class="sort__btn">По убыванию</a>
+            <span class="sort__btn sort__btn--down">По возрастанию</span>
+          </section>
         </div>
       </div>
 
-      
-      <!-- <div>
-        <div class="catalog-wrap">
+      <div class="catalog-container">
+        <div class="container catalog-wrap">
+
           <section class="catalog-left-column filter">
-            <h2 class="filter__header">Фильтр:</h2>
-            <form action="">
-              <input type="text">
-              <input type="text">
-              <input type="text">
-              <input type="text">
+            <h2 class="visually-hidden">Фильтр</h2>
+            <form action="https://echo.htmlacademy.ru" method="GET">
+              <fieldset class="filter__field">
+                <legend class="filter__field-header">Стоимость</legend>
+                <div class="cost__range">
+                  <div class="cost__slider cost__slider--left" tabindex="0">
+                    <span class="cost__slider-value">от 0</span>
+                  </div>
+                  <div class="cost__slider cost__slider--right" tabindex="0">
+                    <span class="cost__slider-value">до 5000</span>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="filter__field">
+                <legend class="filter__field-header">Цвет</legend>
+                <input type="checkbox" name="color" value="black" id="color-black" class="filter__checkbox">
+                <label for="color-black" class="filter__label">Черный</label><br>
+                <input type="checkbox" name="color" value="white" id="color-white" class="filter__checkbox">
+                <label for="color-white" class="filter__label">Белый</label><br>
+                <input type="checkbox" name="color" value="blue" id="color-blue" class="filter__checkbox">
+                <label for="color-blue" class="filter__label">Синий</label><br>
+                <input type="checkbox" name="color" value="red" id="color-red" class="filter__checkbox">
+                <label for="color-red" class="filter__label">Красный</label><br>
+                <input type="checkbox" name="color" value="pink" id="color-pink" class="filter__checkbox">
+                <label for="color-pink" class="filter__label">Розовый</label><br>
+              </fieldset>
+              <fieldset class="filter__field">
+                <legend class="filter__field-header">Bluetooth</legend>
+                <input type="radio" name="bluetooth" value="on" id="bluetooth-is" class="filter__radio-btn"><label for="bluetooth-is" class="filter__label">Есть</label><br>
+                <input type="radio" name="bluetooth" value="off" id="bluetooth-no" class="filter__radio-btn"><label for="bluetooth-no" class="filter__label">Нет</label><br>
+              </fieldset>
+              <button type="submit" class="filter__submit general-button">Показать</button>
             </form>
           </section>
-          <div class="catalog-right-column">
-            textetxtetx
-          </div>
-        </div>
-      </div> -->
 
+
+          <div class="catalog-right-column catalog__list">
+            <article class="catalog__item">
+              <div class="catalog__item-bg">
+                <img src="img/item-1.jpg" alt="Селфи-палка">
+                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
+                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+              </div>
+              <h3 class="catalog__item-header">Любительская селфи-палка</h3>
+              <span class="catalog__item-price">500 руб.</span>
+            </article>
+            <article class="catalog__item">
+              <div class="catalog__item-bg">
+                <img src="img/item-2.jpg" alt="Селфи-палка">
+                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
+                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+              </div>
+              <h3 class="catalog__item-header">Профессиональная селфи&#8209палка </h3>
+              <span class="catalog__item-price">1500 руб.</span>
+            </article>
+            <article class="catalog__item">
+              <div class="catalog__item-bg">
+                <img src="img/item-3.jpg" alt="Селфи-палка">
+                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
+                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+              </div>
+              <h3 class="catalog__item-header">Непотопляемая селфи&#8209палка</h3>
+              <span class="catalog__item-price">2500 руб.</span>
+            </article>
+            <article class="catalog__item">
+              <div class="catalog__item-bg">
+                <img src="img/item-4.jpg" alt="Селфи-палка">
+                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
+                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+              </div>
+              <h3 class="catalog__item-header">Селфи-палка «Следуй за мной»</h3>
+              <span class="catalog__item-price">4900 руб.</span>
+            </article>
+            <div class="catalog__nav">
+              <a href="#" class="catalog__nav-text">Назад</a>
+              <span class="catalog__nav-text">1</span>
+              <a href="#" class="catalog__nav-text">2</a>
+              <a href="#" class="catalog__nav-text">3</a>
+              <a href="#" class="catalog__nav-text">Вперед</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       
 
