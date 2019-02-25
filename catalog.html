@@ -10,16 +10,17 @@
 
     <header class="page-header container">
       <div class="page-header__wrap">
-        <span class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <img src="img/logo.svg" alt="Device">
-        </span>
+        </a>
         <div class="page-header__row">
           <form action="https://echo.htmlacademy.ru" class="page-header__form" method="GET">
             <input type="search" class="page-header__search" placeholder="Поиск по сайту" name="search" required>
             <button type="submit" class="page-header__btn-search">Найти</button>
           </form>
           <ul class="page-header__account">
-            <li><a href="#" class="page-header__login page-header__link-general">Войти</a></li>
+            <li><a href="#" class="page-header__login page-header__link-general">Валентин Петухов</a></li>
+            <li><a href="#" class="page-header__login page-header__login--exit page-header__link-general">Выйти</a></li>
           </ul>
           <a href="#" class="page-header__compare page-header__link-general">Сравнить</a>
           <a href="#" class="page-header__cart page-header__link-general">Корзина</a>
@@ -30,7 +31,7 @@
               <ul class="page-header__sub-nav">
                 <li>
                   <a href="#" class="page-header__sub-link page-header__link-general">Виртуальная реальность</a>
-                  <a href="#" class="page-header__sub-link page-header__link-general">Моноподы для селфи</a>
+                  <a href="catalog.html" class="page-header__sub-link page-header__link-general">Моноподы для селфи</a>
                   <a href="#" class="page-header__sub-link page-header__link-general">Экшн-камеры</a>
                 </li>
                 <li>
@@ -107,20 +108,20 @@
               <fieldset class="filter__field">
                 <legend class="filter__field-header">Цвет</legend>
                 <input type="checkbox" name="color" value="black" id="color-black" class="filter__checkbox">
-                <label for="color-black" class="filter__label">Черный</label><br>
+                <label for="color-black" class="filter__label">Черный</label>
                 <input type="checkbox" name="color" value="white" id="color-white" class="filter__checkbox">
-                <label for="color-white" class="filter__label">Белый</label><br>
+                <label for="color-white" class="filter__label">Белый</label>
                 <input type="checkbox" name="color" value="blue" id="color-blue" class="filter__checkbox">
-                <label for="color-blue" class="filter__label">Синий</label><br>
+                <label for="color-blue" class="filter__label">Синий</label>
                 <input type="checkbox" name="color" value="red" id="color-red" class="filter__checkbox">
-                <label for="color-red" class="filter__label">Красный</label><br>
+                <label for="color-red" class="filter__label">Красный</label>
                 <input type="checkbox" name="color" value="pink" id="color-pink" class="filter__checkbox">
-                <label for="color-pink" class="filter__label">Розовый</label><br>
+                <label for="color-pink" class="filter__label">Розовый</label>
               </fieldset>
               <fieldset class="filter__field">
                 <legend class="filter__field-header">Bluetooth</legend>
-                <input type="radio" name="bluetooth" value="on" id="bluetooth-is" class="filter__radio-btn"><label for="bluetooth-is" class="filter__label">Есть</label><br>
-                <input type="radio" name="bluetooth" value="off" id="bluetooth-no" class="filter__radio-btn"><label for="bluetooth-no" class="filter__label">Нет</label><br>
+                <input type="radio" name="bluetooth" value="on" id="bluetooth-is" class="filter__radio-btn"><label for="bluetooth-is" class="filter__label">Есть</label>
+                <input type="radio" name="bluetooth" value="off" id="bluetooth-no" class="filter__radio-btn"><label for="bluetooth-no" class="filter__label">Нет</label>
               </fieldset>
               <button type="submit" class="filter__submit general-button">Показать</button>
             </form>
@@ -131,37 +132,37 @@
             <article class="catalog__item">
               <div class="catalog__item-bg">
                 <img src="img/item-1.jpg" alt="Селфи-палка">
-                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
-                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+                <span class="catalog__item-added-cart general-button">В корзину</span>
+                <span class="catalog__item-compare">Добавить к сравнению</span>
               </div>
-              <h3 class="catalog__item-header">Любительская селфи-палка</h3>
+              <a href="#" class="catalog__item-header">Любительская селфи-палка</a>
               <span class="catalog__item-price">500 руб.</span>
             </article>
             <article class="catalog__item">
               <div class="catalog__item-bg">
                 <img src="img/item-2.jpg" alt="Селфи-палка">
-                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
-                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+                <span class="catalog__item-added-cart general-button">В корзину</span>
+                <span class="catalog__item-compare">Добавить к сравнению</span>
               </div>
-              <h3 class="catalog__item-header">Профессиональная селфи&#8209палка </h3>
+              <a href="#" class="catalog__item-header">Профессиональная селфи&#8209;палка</a>
               <span class="catalog__item-price">1500 руб.</span>
             </article>
             <article class="catalog__item">
               <div class="catalog__item-bg">
                 <img src="img/item-3.jpg" alt="Селфи-палка">
-                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
-                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+                <span class="catalog__item-added-cart general-button">В корзину</span>
+                <span class="catalog__item-compare">Добавить к сравнению</span>
               </div>
-              <h3 class="catalog__item-header">Непотопляемая селфи&#8209палка</h3>
+              <a href=""class="catalog__item-header">Непотопляемая селфи&#8209;палка</a>
               <span class="catalog__item-price">2500 руб.</span>
             </article>
-            <article class="catalog__item">
+            <article class="catalog__item catalog__item--new">
               <div class="catalog__item-bg">
                 <img src="img/item-4.jpg" alt="Селфи-палка">
-                <a href="#" class="catalog__item-added-cart general-button">В корзину</a>
-                <a href="#" class="catalog__item-compare">Добавить к сравнению</a>
+                <span class="catalog__item-added-cart general-button">В корзину</span>
+                <span class="catalog__item-compare">Добавить к сравнению</span>
               </div>
-              <h3 class="catalog__item-header">Селфи-палка «Следуй за мной»</h3>
+              <a href="#" class="catalog__item-header">Селфи-палка «Следуй за мной»</a>
               <span class="catalog__item-price">4900 руб.</span>
             </article>
             <div class="catalog__nav">
@@ -182,10 +183,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__row-1 container">
-        <span class="page-footer__logo"><img src="img/logo--yellow.svg" alt="Device"></span>
+        <a href="index.html" class="page-footer__logo"><img src="img/logo--yellow.svg" alt="Device"></a>
         <div class="page-footer__wrap-row1">
           <ul class="page-footer__account">
-            <li><a href="#" class="page-footer__login page-footer__link-general">Войти</a></li>
+            <li><a href="#" class="page-footer__login page-footer__link-general">Валентин Петухов</a></li>
+            <li><a href="#" class="page-footer__login page-footer__login--exit page-footer__link-general">Выйти</a></li>
           </ul>
           <a href="#" class="page-footer__compare page-footer__link-general">Сравнить</a>
           <a href="#" class="page-footer__cart page-footer__link-general">Корзина</a>
