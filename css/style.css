@@ -72,14 +72,14 @@ body {
   line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 1.33;
+  line-height: 20px;
   letter-spacing: 3.6px;
   color: black;
   border: none;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   height: 40px;
-  padding: 9px 43px;
+  padding: 10px 43px;
   background: -webkit-linear-gradient(rgba(1, 1, 1, 0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(1, 1, 1, 0) 24px);
   background: -o-linear-gradient(rgba(1, 1, 1, 0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(1, 1, 1, 0) 24px);
   background: linear-gradient(rgba(1, 1, 1, 0) 16px, #f0c52e 16px, #f0c52e 24px, rgba(1, 1, 1, 0) 24px);
@@ -193,7 +193,7 @@ a.page-footer__logo:active {
 }
 .page-header__search:focus + .page-header__btn-search {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .page-header__btn-search:hover {
   background-color: #000;
@@ -451,7 +451,7 @@ a.page-footer__logo:active {
   font-size: 0;
   position: relative;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: bottom;
   height: 12px;
   width: 12px;
   padding: 0;
@@ -524,7 +524,7 @@ a.page-footer__logo:active {
 }
 .slider-promo__promo-text {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   margin-right: 160px;
   line-height: 1.19;
   letter-spacing: 0.5px;
@@ -601,7 +601,8 @@ a.page-footer__logo:active {
   list-style: none;
 }
 .page-nav__link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 160px;
   color: #000;
   text-decoration: none;
@@ -622,6 +623,7 @@ a.page-footer__logo:active {
 }
 .page-nav__img {
   height: 160px;
+  width: 100%;
   line-height: 160px;
   background-color: #F6E298;
   text-align: center;
@@ -695,8 +697,11 @@ a.page-footer__logo:active {
   top: 0;
   left: 100%;
   height: 40px;
-  width: 118px;
+  width: 124px;
   background-color: #000;
+}
+.slider-input:focus + label {
+  box-shadow: 0 0 15px #4D90FE;
 }
 .slider__button {
   width: 160px;
@@ -880,7 +885,7 @@ a.page-footer__logo:active {
 }
 .info-us__map {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   margin-top: 9px;
   margin-bottom: 69px;
 }
@@ -1173,7 +1178,7 @@ a.page-footer__logo:active {
   font-weight: 800;
   line-height: 1.33;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 360px;
 }
 .write-us__form input,
@@ -1426,9 +1431,9 @@ a.breadcrumb-item:active {
   padding-left: 72px; 
 }
 .catalog-head{
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.16) calc(50% - 251px), rgba(0, 0, 0, 0.08) calc(50% - 251px));
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.16) calc(50% - 251px), rgba(0, 0, 0, 0.08) calc(50% - 251px));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.16) calc(50% - 251px), rgba(0, 0, 0, 0.08) calc(50% - 251px));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.16) 423px, rgba(0, 0, 0, 0.08) 423px);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.16) 423px, rgba(0, 0, 0, 0.08) 423px);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.16) 423px, rgba(0, 0, 0, 0.08) 423px);
 }
 .sort {
   display: -webkit-box;
@@ -1499,9 +1504,9 @@ a.sort__btn:active {
 
 
 .catalog-container {
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.08) calc(50% - 251px), transparent calc(50% - 251px));
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.08) calc(50% - 251px), transparent calc(50% - 251px));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.08) calc(50% - 251px), transparent calc(50% - 251px));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.08) 423px, transparent 423px);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.08) 423px, transparent 423px);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.08) 423px, transparent 423px);
   padding-top: 69px;
 }
 .filter {
@@ -1589,7 +1594,7 @@ a.sort__btn:active {
   line-height: 1.71;
   color: rgba(0, 0, 0, 0.2);
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   white-space: nowrap;
   margin-top: 14px;
   margin-left: -50%;
@@ -1616,7 +1621,7 @@ a.sort__btn:active {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 100%;
   margin-bottom: 17px;
 }
@@ -1714,7 +1719,7 @@ input:disabled + .filter__label {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   position: absolute;
   top: 28px;
   right: 28px;
