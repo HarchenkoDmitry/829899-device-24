@@ -1,6 +1,8 @@
 var btnWriteUs = document.querySelector(".info-us__button");
 var containerWriteUs = document.querySelector(".write-us");
 var btnCloseWriteUs = containerWriteUs.querySelector(".close-popup");
+var inputWriteUs = containerWriteUs.querySelectorAll(".input");
+
 
 var btnMap = document.querySelector(".info-us__map");
 var containerMap = document.querySelector(".map-popup");
@@ -24,6 +26,7 @@ function toggleSlidePromo() {
   }
 }
 
+
 function toggleSlide() {
   for (var i = 0; i < sliderBtn.length; i++) {
     sliderContainer[i].classList.remove("slider__item--active");
@@ -33,14 +36,15 @@ function toggleSlide() {
   }
 }
 
+
 for (var i = 0; i < sliderPromoBtn.length; i++) {
   sliderPromoBtn[i].addEventListener("click", toggleSlidePromo);
 }
 
+
 for (var i = 0; i < sliderBtn.length; i++) {
   sliderBtn[i].addEventListener("click", toggleSlide);
 }
-
 
 
 
@@ -55,6 +59,7 @@ btnCloseWriteUs.addEventListener("click", function (evt) {
   closeWriteUsModal();
 });
 
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode == 27) {
     closeWriteUsModal();
@@ -67,6 +72,7 @@ function openWriteUsModal() {
   overlay.classList.add("overlay--active");
   containerWriteUs.querySelector("input").focus();
 }
+
 
 function closeWriteUsModal() {
   containerWriteUs.classList.remove("modal--show");
@@ -85,6 +91,7 @@ btnCloseMap.addEventListener("click", function (evt) {
   closeMapModal();
 });
 
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode == 27) {
     closeMapModal();
@@ -97,6 +104,7 @@ function openMapModal() {
   overlay.classList.add("overlay--active");
 }
 
+
 function closeMapModal() {
   containerMap.classList.remove("modal--show");
   overlay.classList.remove("overlay--active");
@@ -108,4 +116,18 @@ overlay.addEventListener("click", function ()  {
   overlay.classList.remove("overlay--active");
 });
 
-
+containerWriteUs.querySelector("form").addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  var valid = true;
+  for (var i = 0; i < inputWriteUs.length; i++) {
+    inputWriteUs[i].classList.remove("error");
+    if (!inputWriteUs[i].value) {
+      inputWriteUs[i].offsetWidth = inputWriteUs[i].offsetWidth; 
+      inputWriteUs[i].classList.add("error");
+      valid = false;
+    }
+  }
+  if (valid) {
+    containerWriteUs.querySelector("form").submit();
+  }
+}); 
